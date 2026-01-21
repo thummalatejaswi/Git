@@ -1,0 +1,24 @@
+body {
+    font-family: system-ui;
+    background: #0f172a;
+    color: white;
+}
+
+svg {
+    border: 1px solid #334155;
+    background: #020617;
+}
+
+.commit {
+    fill: #38bdf8;
+}
+
+.edge {
+    stroke: #64748b;
+    stroke-width: 2;
+}
+
+.label {
+    fill: #e5e7eb;
+    font-size: 12px;
+}

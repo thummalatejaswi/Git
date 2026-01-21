@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title> Git Visualizer</title>
+    </head>
+
+    <body>
+        <h2>Git Commit Graph</h2>
+        
+        <svg id="graph" width="1000" height="500"></svg>
+        <div>
+            <h3>Commit</h3>
+            <input type="text" id="commitMsg" placeholder="Enter commit message" />
+            <button id="commitBtn">Commit</button>
+          </div>
+          
+          <div>
+            <h3>Create Branch</h3>
+            <input type="text" id="branchName" placeholder="Enter branch name" />
+            <button id="createBranchBtn">Create Branch</button>
+          </div>
+          
+          <div>
+            <h3>Checkout Branch</h3>
+            <input type="text" id="checkoutBranchName" placeholder="Branch to checkout" />
+            <button id="checkoutBtn">Checkout</button>
+          </div>
+        <script src="repo.js"></script>
+        <script src="draw.js"></script>
+        <script src="visualize.js"></script>
+        <script src="main.js"></script>
+    </body>
+</html>
