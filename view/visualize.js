@@ -3,6 +3,7 @@ function render(repo) {
     svg.innerHTML = "";
   
     const commits = repo.log();
+    const minWidth = 1000;
     const spacing = 80;
     const startX = 100;
     const startY = 80;
@@ -12,6 +13,11 @@ function render(repo) {
     const branchLanes = new Map();
     let laneIndex = 0;
     console.log('commits', commits);
+
+    svg.setAttribute(
+      "width",
+      Math.max(minWidth, commits.length * spacing + 200)
+    );
 
 
     commits.forEach(commit => {
@@ -43,6 +49,11 @@ function render(repo) {
       const { x, y } = positions.get(commit);
       drawCommit(svg, x, y, commit.id);
       drawLabel(svg, x, y, commit.message);
+    });
+
+    svg.parentElement.scrollTo({
+      left: svg.scrollWidth,
+      behavior: "smooth"
     });
 }
   

@@ -1,0 +1,105 @@
+body {
+  font-family: system-ui;
+  background: #0f172a;
+  color: white;
+}
+
+svg {
+  border: 1px solid #334155;
+  background: #020617;
+}
+
+.commit {
+  fill: #38bdf8;
+}
+
+.edge {
+  stroke: body;
+  stroke-font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  stroke-background: #1e293b; /* Softer dark background */
+  stroke-color: #f8fafc; /* Softer white text */
+  stroke-margin: 0;
+  stroke-padding: 0;
+  stroke-line-height: 1.6;
+}
+
+.edge svg {
+  border: 1px solid #475569; /* Softer border color */
+  background: #0f172a; /* Slightly lighter background for contrast */
+  border-radius: 8px; /* Rounded corners for a modern look */
+  padding: 16px; /* Add some padding inside the SVG */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.edge .commit {
+  fill: #3b82f6; /* Brighter blue for better contrast */
+  transition: fill 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.edge .commit:hover {
+  fill: #2563eb; /* Darker blue on hover */
+}
+
+.edge .edge {
+  stroke: #94a3b8; /* Softer stroke color */
+  stroke-width: 2;
+  transition: stroke 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.edge .edge:hover {
+  stroke: #64748b; /* Darker stroke on hover */
+}
+
+.edge .label {
+  fill: #cbd5e1; /* Softer label color */
+  font-size: 14px; /* Slightly larger font size for readability */
+  font-weight: 500; /* Medium weight for modern typography */
+}
+
+.edge .label:hover {
+  fill: #e2e8f0; /* Brighter label color on hover */
+}
+
+.edge {
+  /* Add some spacing and alignment for a cleaner layout */
+}
+
+.edge .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.edge button {
+  background: #3b82f6;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 20px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.edge button:hover {
+  background: #2563eb;
+  transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+.edge button:active {
+  background: #1d4ed8;
+  transform: translateY(0); /* Reset lift effect on click */
+}
+
+.edge {
+  stroke-width: 2;
+}
+
+.label {
+  fill: #e5e7eb;
+  font-size: 12px;
+}
+
+
+
+/*# sourceMappingURL=repo.css.map */

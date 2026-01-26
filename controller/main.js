@@ -6,9 +6,8 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   document.getElementById("commitBtn").addEventListener("click", () => {
-    const msg = document.getElementById("commitMsg").value.trim();
+    const msg = document.getElementById("commitMsg").value.trim().toUpperCase();
     if (!msg) return alert("Enter commit message");
-
     repo.commit(msg);
     update();
     document.getElementById("commitMsg").value = "";
